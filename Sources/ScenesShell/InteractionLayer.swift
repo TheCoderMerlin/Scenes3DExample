@@ -8,7 +8,7 @@ import Scenes3D
 
 class InteractionLayer : Layer3D {
     let entity3D = RenderableEntity3D(name:"entity3D")
-    let object3D = Cube(position:Vector3(x:-300, y:-300, z:10), size:Vector3(x:200, y:200, z:5))
+    let object3D = Cube(position:Vector3(x:-300, y:-300, z:10), rotation:Vector3(x:0, y:0, z:30), size:Vector3(x:200, y:200, z:5))
     let myCamera = Camera()
     
     init() {
