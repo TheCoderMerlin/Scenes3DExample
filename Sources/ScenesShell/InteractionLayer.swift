@@ -1,3 +1,4 @@
+import Igis
 import Scenes
 import Scenes3D
 
@@ -20,6 +21,10 @@ class InteractionLayer : Layer3D {
         setCamera(camera:myCamera)
         // We insert our RenderableEntities in the constructor
         insert(entity3D:entity3D)
+    }
+
+    override func preCalculate(canvas:Canvas) {
+        object3D.rotation.z += 1.0.asRadians
     }
 }
 
